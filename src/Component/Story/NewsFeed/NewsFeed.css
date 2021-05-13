@@ -8,6 +8,25 @@
 
 }
 
-.dots{
-    background-color: red;
+.ReAvatar{
+  margin-left: 77%;
+  margin-top: -77%;
+  display: flex;
+}
+
+.ReAvatar >b{
+  color: blue;
+  margin-top: 6%;
+  margin-left: 6%;
+  font-size: small;  
+}
+
+.Suggests{
+  margin-left: 77%;
+  margin-top: -3%;
+}
+
+.Suggests > p{
+  color: gray;
+  margin-top: 6%;
 }
