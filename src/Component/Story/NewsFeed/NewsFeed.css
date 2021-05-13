@@ -1,9 +1,9 @@
 .NewsFeed{
     width: 600px;
   border: 1px solid rgb(229, 231, 229);
-  padding: 5px;
+  padding: 10px;
   margin-left: 24%;
-  height: 10%;
+  height: 15%;
   padding-bottom: 20%;
 
 }
@@ -27,6 +27,6 @@
 }
 
 .Suggests > p{
-  color: gray;
-  margin-top: 6%;
+  color: black;
+  display: inline-block;
 }

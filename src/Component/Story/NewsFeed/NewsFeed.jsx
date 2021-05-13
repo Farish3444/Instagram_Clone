@@ -35,18 +35,19 @@ function NewsFeed() {
     src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDqQ_ggMqsdPl7PyGbSufT7bdf0tU57kJA2w&usqp=CAU'
     style={{backgroundColor:'red',margin:'10%'}}
 />
-<p>React JS</p>
+<p>Redux</p>
 <ReAvatar 
     src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpGa43WvwqMlvmD75CQ2_EENFPIOKhBTEi0Q&usqp=CAUhttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpGa43WvwqMlvmD75CQ2_EENFPIOKhBTEi0Q&usqp=CAU'
     style={{backgroundColor:'red',margin:'10%'}}
 />
-<p>Redux</p>
+<p>Javascript</p>
 <ReAvatar 
     src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrctvcSryYL8M8fNHnohedYgcr3B7NrxfL7Q&usqp=CAU'
     style={{backgroundColor:'red',margin:'10%'}}
 />
-<p>Javascript</p>
 </div>
+<p style={{margin:'50%',marginLeft:'84%',marginTop:'-20%',whiteSpace:'nowrap'}}>React JS</p>
+<b style={{margin:'50%',marginLeft:'94%',marginTop:'-10%'}}>Follow</b>
         </React.Fragment>
     )
 }
