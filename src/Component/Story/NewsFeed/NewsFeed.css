@@ -1,0 +1,13 @@
+.NewsFeed{
+    width: 600px;
+  border: 1px solid rgb(229, 231, 229);
+  padding: 5px;
+  margin-left: 24%;
+  height: 10%;
+  padding-bottom: 20%;
+
+}
+
+.dots{
+    background-color: red;
+}

@@ -1,0 +1,18 @@
+.Head{
+    background-color: rgb(255, 255, 255);
+    margin-top:1.9%;  
+}
+
+.HeadInput{
+    margin-left: 20%;
+    margin-top: -1.5%;
+    top: 1%;
+    width: 15%;
+    height: 16px;
+}
+
+.notifications{
+    margin-left: 70%;
+    cursor: pointer;
+    margin-top: -3%;
+}
