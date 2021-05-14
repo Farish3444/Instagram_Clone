@@ -1,8 +1,9 @@
 import React from 'react'
 import './NewsFeed.css';
-import ReAvatar from '/Users/apple/Desktop/REACTING/reactProjects/project1/clone-react/src/Component/Story/ReAvatar.jsx'
+import ReAvatar from '/Users/apple/Desktop/REACTING/reactProjects/project1/clone-react/src/ReuseComps/ReAvatar.jsx'
 import InstagrmPic from '/Users/apple/Desktop/REACTING/reactProjects/project1/clone-react/src/Component/Story/NewsFeed/instagramImage.jpeg'
 import Avatar from '@material-ui/core/Avatar';
+import ReNewsFeed from '/Users/apple/Desktop/REACTING/reactProjects/project1/clone-react/src/ReuseComps/ReNewsFeed.jsx'
 
 function NewsFeed() {
     return (
@@ -11,15 +12,17 @@ function NewsFeed() {
         <div className="NewsFeed">
         <Avatar alt="Remy Sharp" 
         src={'https://images.hindustantimes.com/tech/img/2021/04/17/960x540/image_-_2021-01-30T131056.370_1611992460978_1611992467840_1618649284491.jpg'}
+        style={{marginTop:'1%'}}
         // style={{he}}    
         />
-        <div classNane="dots" style={{marginLeft:'90%',fontSize:'130%'}}>
+        <b style={{marginLeft:'12%',marginTop:'20px'}}>Allahuakbar</b>
+        <div className="dots" style={{marginLeft:'90%',fontSize:'130%'}}>
         <a>
         ...
         </a>    
         </div>
-        <b style={{marginLeft:'15%',marginTop:'5%'}}>Allahuakbar</b>
-            <img src={InstagrmPic} style={{width:'100%',marginTop:'10%'}}/>
+        {/* <hr/> */}
+            <img src={InstagrmPic} style={{width:'100%',marginTop:'5%',marginLeft:'1%'}}/>
         </div>
 <div className='ReAvatar'>
             <ReAvatar 
@@ -48,6 +51,10 @@ function NewsFeed() {
 </div>
 <p style={{margin:'50%',marginLeft:'84%',marginTop:'-20%',whiteSpace:'nowrap'}}>React JS</p>
 <b style={{margin:'50%',marginLeft:'94%',marginTop:'-10%'}}>Follow</b>
+
+<ReNewsFeed 
+    src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj67NSx8a3ePU_B-5mC2w7CDVQXypJ3aBcvDZLj320udCNZWoaW568d3-Q76rXFMWGigk&usqp=CAU'}
+/>
         </React.Fragment>
     )
 }

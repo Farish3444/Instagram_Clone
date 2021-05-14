@@ -14,27 +14,24 @@ import {
   } 
 from 'react-router-dom';
 
-const main = (
-<Route component={App}>
-      <Route path='/HeaderPart' component={HeaderPart} />
-      <Route path="/Story" component={Story}/>
-      <Route path='/NewsFeed' component={NewsFeed}/>
-</Route>
+// const main = (
+// <Route component={App}>
+//       <Route path='/HeaderPart' component={HeaderPart} />
+//       <Route path="/Story" component={Story}/>
+//       <Route path='/NewsFeed' component={NewsFeed}/>
+// </Route>
 
 
-)
+// )
 
 function App() {
   return (
     <div className="App">
-    <React.Fragment>
-    
-    {main}
-  
-      {/* <HeaderPart/> */}
-      {/* <Story /> */}
-      {/* <NewsFeed /> */}
-      <Login />
+    <React.Fragment>   
+    {/* {main} */}
+      <HeaderPart/> 
+      <Story />
+      <NewsFeed />
     </React.Fragment>
     </div>
   );
