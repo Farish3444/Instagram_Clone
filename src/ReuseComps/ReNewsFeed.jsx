@@ -3,14 +3,14 @@ import InstagrmPic from '/Users/apple/Desktop/REACTING/reactProjects/project1/cl
 import Avatar from '@material-ui/core/Avatar';
 
 
-function ReNewsFeed({src}) {
+function ReNewsFeed({src,name}) {
     return (
         
             <div className="NewsFeed">
         <Avatar alt="Remy Sharp" 
         src={'https://images.hindustantimes.com/tech/img/2021/04/17/960x540/image_-_2021-01-30T131056.370_1611992460978_1611992467840_1618649284491.jpg'}       
         />
-        <b style={{marginLeft:'12%',marginTop:'20px'}}>Allahuakbar</b>
+        <b style={{marginLeft:'12%',marginTop:'20px'}}>{name}</b>
         <div className="dots" style={{marginLeft:'100%'}}>
         <a>
         ...

@@ -51,13 +51,14 @@ function NewsFeed() {
 </div>
 <p style={{margin:'50%',marginLeft:'84%',marginTop:'-20%',whiteSpace:'nowrap'}}>React JS</p>
 <b style={{margin:'50%',marginLeft:'94%',marginTop:'-10%'}}>Follow</b>
-
+<br/>
 <ReNewsFeed 
     src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj67NSx8a3ePU_B-5mC2w7CDVQXypJ3aBcvDZLj320udCNZWoaW568d3-Q76rXFMWGigk&usqp=CAU'}
-    
+    name='Astrofilah'
 />
 <ReNewsFeed 
     src={'https://i.pcmag.com/imagery/reviews/05CbcW9cP4o0rqbCnVB2OFZ-1..1584707541.jpg'}
+    name='Subhanallah'
 />
         </React.Fragment>
     )
