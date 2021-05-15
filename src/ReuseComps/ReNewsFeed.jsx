@@ -3,6 +3,7 @@ import InstagrmPic from '/Users/apple/Desktop/REACTING/reactProjects/project1/cl
 import Avatar from '@material-ui/core/Avatar';
 
 
+
 function ReNewsFeed({src,name}) {
     return (
         
@@ -17,8 +18,8 @@ function ReNewsFeed({src,name}) {
         </a>    
         </div>
             <img src={src} style={{width:'100%',marginTop:'5%',marginLeft:'1%'}}/>
+        <br/>        
         </div>
-        
     )
 }
 

@@ -13,7 +13,7 @@ import {
   BrowserRouter
   } 
 from 'react-router-dom';
-
+import Tables from './Table/Tables.jsx';
 // const main = (
 // <Route component={App}>
 //       <Route path='/HeaderPart' component={HeaderPart} />
@@ -32,6 +32,7 @@ function App() {
       <HeaderPart/> 
       <Story />
       <NewsFeed />
+      <Tables/>
     </React.Fragment>
     </div>
   );
