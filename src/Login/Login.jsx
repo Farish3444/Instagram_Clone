@@ -1,10 +1,26 @@
 import React,{useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
+import {
+    Route,
+    Switch,
+    Link,
+    NavLink,
+    Redirect,
+    BrowserRouter,
+    useHistory
+    } 
+  from 'react-router-dom';
+import MainStore from '/Users/apple/Desktop/REACTING/reactProjects/project1/clone-react/src/MainStore.jsx';
 
 
 
 function Login() {
+
+    let history = useHistory();
+    function handleHistory(){
+       history.push('/MainPage')
+    };
 
     const [state, setstate] = useState({username:'',password:''});
 
@@ -46,7 +62,9 @@ function Login() {
                    onChange={ChangeIt2}
                />
                <br/>
-               <button onClick={formSub}>Button</button>
+<NavLink to='/MainStore'>
+    <button onClick={formSub}>Button</button>
+</NavLink>
            </form>
         </div>
     )

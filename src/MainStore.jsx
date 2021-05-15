@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import './App.css';
 import HeaderPart from './Header/HeadPart';
 import Story from './Component/Story/Story';
@@ -14,20 +14,17 @@ import {
   } 
 from 'react-router-dom';
 import Tables from './Table/Tables.jsx';
-import MainStore from './MainStore';
 
 
-function App() {
-  return (
-   <Switch>
-     <Route to='/' exact component={Login}/>
-   <Route to="/MainStore" component={MainStore}/>
-   </Switch>
-  );
+function MainStore() {
+    return (       
+<React.Fragment>   
+      <HeaderPart/> 
+      <Story />
+      <NewsFeed />
+      <Tables/>
+</React.Fragment>            
+    )
 }
 
-
-
-
-
-export default App;
+export default MainStore;
