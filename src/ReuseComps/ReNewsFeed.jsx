@@ -8,12 +8,10 @@ function ReNewsFeed({src}) {
         
             <div className="NewsFeed">
         <Avatar alt="Remy Sharp" 
-        src={'https://images.hindustantimes.com/tech/img/2021/04/17/960x540/image_-_2021-01-30T131056.370_1611992460978_1611992467840_1618649284491.jpg'}
-        style={{marginTop:'1%'}}
-           
+        src={'https://images.hindustantimes.com/tech/img/2021/04/17/960x540/image_-_2021-01-30T131056.370_1611992460978_1611992467840_1618649284491.jpg'}       
         />
         <b style={{marginLeft:'12%',marginTop:'20px'}}>Allahuakbar</b>
-        <div className="dots" style={{marginLeft:'90%',fontSize:'130%'}}>
+        <div className="dots" style={{marginLeft:'100%'}}>
         <a>
         ...
         </a>    
@@ -25,4 +23,3 @@ function ReNewsFeed({src}) {
 }
 
 export default ReNewsFeed;
-;

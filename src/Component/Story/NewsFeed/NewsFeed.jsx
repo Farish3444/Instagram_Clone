@@ -16,7 +16,7 @@ function NewsFeed() {
         // style={{he}}    
         />
         <b style={{marginLeft:'12%',marginTop:'20px'}}>Allahuakbar</b>
-        <div className="dots" style={{marginLeft:'90%',fontSize:'130%'}}>
+        <div className="dots" style={{marginLeft:'95%',fontSize:'130%'}}>
         <a>
         ...
         </a>    
@@ -54,6 +54,10 @@ function NewsFeed() {
 
 <ReNewsFeed 
     src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj67NSx8a3ePU_B-5mC2w7CDVQXypJ3aBcvDZLj320udCNZWoaW568d3-Q76rXFMWGigk&usqp=CAU'}
+    
+/>
+<ReNewsFeed 
+    src={'https://i.pcmag.com/imagery/reviews/05CbcW9cP4o0rqbCnVB2OFZ-1..1584707541.jpg'}
 />
         </React.Fragment>
     )
