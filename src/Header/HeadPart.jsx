@@ -4,6 +4,7 @@ import homeLogo from '/Users/apple/Desktop/REACTING/reactProjects/project1/clone
 import notifiLogo from '/Users/apple/Desktop/REACTING/reactProjects/project1/clone-react/src/Header/like--v1.png'
 import chatLogo from '/Users/apple/Desktop/REACTING/reactProjects/project1/clone-react/src/Header/topic-push-notification.png'
 import React from 'react'
+import { toast } from 'react-toastify';
 // import { makeStyles } from '@material-ui/core/styles';
 // import Grid from '@material-ui/core/Grid';
 // import Avatar from '@material-ui/core/Avatar';
@@ -19,9 +20,9 @@ function HeaderPart() {
                style={{textAlign:'center'}}
            />
            <div className='notifications'>
-        <img src={homeLogo} style={{width:'10%'}} onClick={()=>{alert('Home Page Refreshed')}}/>
+        <img src={homeLogo} style={{width:'10%'}} onClick={()=>toast.success('home Refresing')} />
         <img src={notifiLogo} style={{width:'11%',marginLeft:'15%'}} onClick={()=>{alert('No Notifications')}}/>
-        <img src={chatLogo} style={{width:'11%',marginLeft:'15%'}}/>
+        <img src={chatLogo} style={{width:'11%',marginLeft:'15%'}} onClick={()=> toast('checking for messages')}/>
            </div>
            <hr/>
            

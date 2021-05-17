@@ -12,7 +12,7 @@ import {
     } 
   from 'react-router-dom';
 import MainStore from '/Users/apple/Desktop/REACTING/reactProjects/project1/clone-react/src/MainStore.jsx';
-
+import App from '/Users/apple/Desktop/REACTING/reactProjects/project1/clone-react/src/App.js';
 
 
 function Login() {
@@ -62,7 +62,7 @@ function Login() {
                    onChange={ChangeIt2}
                />
                <br/>
-<NavLink to='/MainStore'>
+<NavLink to='/App'>
     <button onClick={formSub}>Button</button>
 </NavLink>
            </form>
