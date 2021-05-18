@@ -17,20 +17,22 @@ import {
   Router
   } 
 from 'react-router-dom';
-import Tables from './Table/Tables.jsx';
+// import Tables from './Table/Tables.jsx';
 import MainStore from './MainStore';
+import ProfilePage from './ProfilePage';
 
 
 function App() {
   return (
     <React.Fragment>
     <ToastContainer />
-       <BrowserRouter>
-   </BrowserRouter>   
+       
       <HeaderPart/> 
       <Story />
       <NewsFeed />
-      <Tables/>
+      {/* <Tables/> */}
+      <ProfilePage path="/ProfilePage"/>
+   
 </React.Fragment>   
   );
 }

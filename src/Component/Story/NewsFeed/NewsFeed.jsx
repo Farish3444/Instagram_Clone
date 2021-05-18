@@ -5,13 +5,13 @@ import InstagrmPic from '/Users/apple/Desktop/REACTING/reactProjects/project1/cl
 import Avatar from '@material-ui/core/Avatar';
 import ReNewsFeed from '/Users/apple/Desktop/REACTING/reactProjects/project1/clone-react/src/ReuseComps/ReNewsFeed.jsx'
 import { toast } from 'react-toastify';
-
+import Reactpic from '/Users/apple/Desktop/REACTING/reactProjects/project1/clone-react/src/one-year-of-react-native.png';
 
 
 function NewsFeed() {
 
     const [state, setstate] = useState(<b>Follow</b>);
-    
+    const [inHover, setHover] = useState(false);
     
 
 
@@ -20,7 +20,8 @@ function NewsFeed() {
 
         <div className="NewsFeed">
         <Avatar alt="Remy Sharp" 
-        src={'https://images.hindustantimes.com/tech/img/2021/04/17/960x540/image_-_2021-01-30T131056.370_1611992460978_1611992467840_1618649284491.jpg'}
+
+        src={'/Users/apple/Desktop/REACTING/reactProjects/project1/clone-react/src/one-year-of-react-native.png'}
         style={{marginTop:'1%'}}
         // style={{he}}    
         />
@@ -31,7 +32,10 @@ function NewsFeed() {
         </a>    
         </div>
         {/* <hr/> */}
-            <img src={InstagrmPic} style={{width:'100%',marginTop:'5%',marginLeft:'1%'}}/>
+            <img src={Reactpic} style={{width:'100%',marginTop:'5%',marginLeft:'1%'}}
+                onMouseEnter={() => setHover(true)}
+                onMouseLeave={() => setHover(false)}
+            />
         </div>
 <div className='ReAvatar'>
             <ReAvatar 
@@ -45,28 +49,27 @@ function NewsFeed() {
 <div className='Suggests'>
 <ReAvatar 
     src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDqQ_ggMqsdPl7PyGbSufT7bdf0tU57kJA2w&usqp=CAU'
-    style={{backgroundColor:'red',margin:'10%',marginLeft:'5%'}}
+    style={{backgroundColor:'red',marginLeft:'5%'}}
 />
-<p style={{marginLeft:'24%',marginTop:'-19%'}}>Redux</p>
-<b style={{cursor:'pointer',marginLeft:'55%'}} onClick={()=>setstate(<b>Following</b>)}>{state}</b>
+<p style={{marginLeft:'24%',marginTop:'-15%'}}>Redux</p>
+<b style={{cursor:'pointer',marginLeft:'55%',marginTop:'1%'}} onClick={()=>setstate(<b>Following</b>)}>{state}</b>
 <ReAvatar 
     src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpGa43WvwqMlvmD75CQ2_EENFPIOKhBTEi0Q&usqp=CAUhttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpGa43WvwqMlvmD75CQ2_EENFPIOKhBTEi0Q&usqp=CAU'
-    style={{backgroundColor:'red',margin:'10%'}}
+    style={{backgroundColor:'red',margin:'10%',marginLeft:'6%'}}
 />
-<p>Javascript</p>
+<p style={{marginLeft:'28%'}}>Javascript</p>
 <b style={{cursor:'pointer',marginLeft:'55%'}} onClick={()=>setstate(<b>Following</b>)}>{state}</b>
 <ReAvatar 
     src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrctvcSryYL8M8fNHnohedYgcr3B7NrxfL7Q&usqp=CAU'
-    style={{backgroundColor:'red',margin:'10%'}}
+    style={{backgroundColor:'red',margin:'10%',marginLeft:'9%',marginTop:'10%'}}
 />
 <b style={{cursor:'pointer',marginLeft:'55%'}} onClick={()=>setstate(<b>Following</b>)}>{state}</b>
 </div>
-<p style={{margin:'50%',marginLeft:'84%',marginTop:'-20%',whiteSpace:'nowrap'}}>React JS</p>
-<b style={{margin:'50%',marginLeft:'94%',marginTop:'-10%'}}><button href="#">Follow</button></b>
+<p style={{margin:'90%',marginLeft:'83%',marginTop:'-20%',whiteSpace:'nowrap'}}>React JS</p>
 <br/>
 <ReNewsFeed 
     src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj67NSx8a3ePU_B-5mC2w7CDVQXypJ3aBcvDZLj320udCNZWoaW568d3-Q76rXFMWGigk&usqp=CAU'}
-    name='Astrofilah -'
+    name='Astrofilah'
 />
 <ReNewsFeed 
     src={'https://i.pcmag.com/imagery/reviews/05CbcW9cP4o0rqbCnVB2OFZ-1..1584707541.jpg'}
