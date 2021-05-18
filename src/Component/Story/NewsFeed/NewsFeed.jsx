@@ -43,9 +43,10 @@ function NewsFeed() {
 <div className='Suggests'>
 <ReAvatar 
     src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDqQ_ggMqsdPl7PyGbSufT7bdf0tU57kJA2w&usqp=CAU'
-    style={{backgroundColor:'red',margin:'10%'}}
+    style={{backgroundColor:'red',margin:'10%',marginLeft:'5%'}}
 />
-<p>Redux</p>
+<p style={{marginLeft:'24%',marginTop:'-19%'}}>Redux</p>
+<b style={{cursor:'pointer'}} onClick={()=>{'following'}}>follow</b>
 <ReAvatar 
     src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpGa43WvwqMlvmD75CQ2_EENFPIOKhBTEi0Q&usqp=CAUhttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpGa43WvwqMlvmD75CQ2_EENFPIOKhBTEi0Q&usqp=CAU'
     style={{backgroundColor:'red',margin:'10%'}}
