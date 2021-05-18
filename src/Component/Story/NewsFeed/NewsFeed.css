@@ -24,10 +24,15 @@
 
 .Suggests{
   margin-left: 77%;
-  margin-top: -3%;
+  margin-top: -5%;
 }
 
 .Suggests > p{
   color: black;
-  
+  margin-top: auto;
+}
+
+.Suggests >b{
+  margin-top: 1%;
+  color: rgb(45, 116, 116);
 }

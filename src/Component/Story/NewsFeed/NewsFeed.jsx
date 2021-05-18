@@ -11,6 +11,8 @@ import { toast } from 'react-toastify';
 function NewsFeed() {
 
     const [state, setstate] = useState(<b>Follow</b>);
+    
+    
 
 
     return (
@@ -46,16 +48,18 @@ function NewsFeed() {
     style={{backgroundColor:'red',margin:'10%',marginLeft:'5%'}}
 />
 <p style={{marginLeft:'24%',marginTop:'-19%'}}>Redux</p>
-<b style={{cursor:'pointer'}} onClick={()=>{'following'}}>follow</b>
+<b style={{cursor:'pointer',marginLeft:'55%'}} onClick={()=>setstate(<b>Following</b>)}>{state}</b>
 <ReAvatar 
     src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpGa43WvwqMlvmD75CQ2_EENFPIOKhBTEi0Q&usqp=CAUhttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpGa43WvwqMlvmD75CQ2_EENFPIOKhBTEi0Q&usqp=CAU'
     style={{backgroundColor:'red',margin:'10%'}}
 />
 <p>Javascript</p>
+<b style={{cursor:'pointer',marginLeft:'55%'}} onClick={()=>setstate(<b>Following</b>)}>{state}</b>
 <ReAvatar 
     src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrctvcSryYL8M8fNHnohedYgcr3B7NrxfL7Q&usqp=CAU'
     style={{backgroundColor:'red',margin:'10%'}}
 />
+<b style={{cursor:'pointer',marginLeft:'55%'}} onClick={()=>setstate(<b>Following</b>)}>{state}</b>
 </div>
 <p style={{margin:'50%',marginLeft:'84%',marginTop:'-20%',whiteSpace:'nowrap'}}>React JS</p>
 <b style={{margin:'50%',marginLeft:'94%',marginTop:'-10%'}}><button href="#">Follow</button></b>
