@@ -1,11 +1,18 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './NewsFeed.css';
 import ReAvatar from '/Users/apple/Desktop/REACTING/reactProjects/project1/clone-react/src/ReuseComps/ReAvatar.jsx'
 import InstagrmPic from '/Users/apple/Desktop/REACTING/reactProjects/project1/clone-react/src/Component/Story/NewsFeed/instagramImage.jpeg'
 import Avatar from '@material-ui/core/Avatar';
 import ReNewsFeed from '/Users/apple/Desktop/REACTING/reactProjects/project1/clone-react/src/ReuseComps/ReNewsFeed.jsx'
+import { toast } from 'react-toastify';
+
+
 
 function NewsFeed() {
+
+    const [state, setstate] = useState(<b>Follow</b>);
+
+
     return (
         <React.Fragment>
 
@@ -30,7 +37,7 @@ function NewsFeed() {
             />
             <p style={{whiteSpace:'nowrap'}}>User-Admin</p>
             
-            <b>Follow</b>
+            <b style={{cursor:'pointer'}} onClick={()=>{setstate(<b>Following</b>)}}>{state}</b>
             <p style={{color:'gray',whiteSpace:'nowrap',margin:'20%',marginLeft:'-60%'}}>Suggestions For you</p>
 </div>
 <div className='Suggests'>
@@ -50,11 +57,11 @@ function NewsFeed() {
 />
 </div>
 <p style={{margin:'50%',marginLeft:'84%',marginTop:'-20%',whiteSpace:'nowrap'}}>React JS</p>
-<b style={{margin:'50%',marginLeft:'94%',marginTop:'-10%'}}>Follow</b>
+<b style={{margin:'50%',marginLeft:'94%',marginTop:'-10%'}}><button href="#">Follow</button></b>
 <br/>
 <ReNewsFeed 
     src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj67NSx8a3ePU_B-5mC2w7CDVQXypJ3aBcvDZLj320udCNZWoaW568d3-Q76rXFMWGigk&usqp=CAU'}
-    name='Astrofilah'
+    name='Astrofilah -'
 />
 <ReNewsFeed 
     src={'https://i.pcmag.com/imagery/reviews/05CbcW9cP4o0rqbCnVB2OFZ-1..1584707541.jpg'}
