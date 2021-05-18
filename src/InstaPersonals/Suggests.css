@@ -1,0 +1,25 @@
+.ReAvatar{
+    margin-left: 77%;
+    margin-top: -70%;
+    display: flex;
+  }
+  
+  .ReAvatar >b{
+    color: blue;
+    margin-top: 7%;
+    margin-left: 6%;
+    font-size: small;  
+  }
+  
+  .Suggests{
+    margin-left: 77%;
+    
+  }
+  
+  .Suggests > p{
+    color: black;
+  }
+  
+  .Suggests >b{
+    color: rgb(45, 116, 116); 
+  }
