@@ -1,6 +1,6 @@
 .ReAvatar{
     margin-left: 77%;
-    margin-top: -70%;
+    margin-top: -190%;
     display: flex;
   }
   
@@ -13,13 +13,19 @@
   
   .Suggests{
     margin-left: 77%;
-    
+    margin-top: -1%;
+    white-space: nowrap;     
   }
-  
-  .Suggests > p{
-    color: black;
+
+  .Suggests > b{
+    display: flex;
+    margin-left: 70%;
   }
-  
-  .Suggests >b{
-    color: rgb(45, 116, 116); 
-  }
+
+  .Suggests >p{
+      margin-left: 25%;
+      margin-top: -2%;
+      display: flex;
+      color: rgb(59, 79, 109);
+}
+
